@@ -3,9 +3,9 @@ class Professor extends Person
 {
     #subject = "math";
 
-    constructor(firstname,lastname, age, gender, interet, sujet)
+    constructor(firstname,lastname, age, gender, interest, sujet)
     {
-        super(firstname, lastname, age, gender, interet)
+        super(firstname, lastname, age, gender, interest)
         this.#subject = sujet
     }
 
@@ -36,7 +36,13 @@ class Professor extends Person
 
     set subject(sujet)
     {
-        this.#subject = sujet
+        if(typeof(sujet) === 'string'){
+            return this.#subject = sujet 
+        }
+        else{
+            console.log('sujet saisie invalide')
+        }
+        
     }
 
 

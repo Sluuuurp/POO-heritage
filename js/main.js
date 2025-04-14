@@ -38,11 +38,18 @@ console.log("test de a classe professor")
 
 let prof1 = new Professor("michel", "forever", 35, "homme", "timbres", "math")
 
+let eleve1 = new Student("jean", "valjean", 16, "homme", "BD", "666", 12)
+
 console.log(prof1.greeting())
 
 console.log(prof1.infos)
 
 console.log(prof1.askForSilence())
 
+prof1.evaluate(eleve1, "9")
 
+console.log(eleve1.average)
 
+eleve1.number = "65"
+
+console.log(eleve1.number)
