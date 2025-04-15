@@ -20,6 +20,8 @@ console.log(personne1.lastname)
 
 console.log(personne1.firstname)
 
+console.log(personne1.fullname)
+
 console.log(personne1.age)
 
 console.log(personne1.gender)

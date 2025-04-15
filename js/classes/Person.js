@@ -115,6 +115,11 @@ class Person {
         return this.#firstname
     }
 
+    get fullname()
+    {
+        return `${this.#firstname} ${this.#lastname}`
+    }
+
     get age()
     {
         return this.#age
